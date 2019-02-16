@@ -1,0 +1,15 @@
+{
+  "rules": {
+    "brace-style": [2, "stroustrup", { "allowSingleLine": true }],
+    "space-before-function-paren": false,
+    "semicolon": [true, "always"],
+    "quotes": [2, "single", { "allowTemplateLiterals": true }],
+    "trailing-comma": [true, {"multiline": "always", "singleline": "never"}],
+    "one-line": false,
+    "no-return-await": false,
+    "await-promise": true,
+    "deprecation": true,
+    "no-floating-promises": true,
+    "no-boolean-literal-compare": true
+  }
+}

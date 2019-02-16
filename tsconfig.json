@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "outDir": "tsc-out",
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "target": "es5",
+    "sourceMap": true,
+    "experimentalDecorators": true,
+    "lib": ["es7", "es2017", "dom"],
+    "baseUrl": ".",
+    "paths": {
+      "src/*": [ "./src/*" ],
+      "charts/*": [ "./src/components/charts/*" ],
+      "components/*": [ "./src/components/*" ]
+    }
+  },
+  "include": [
+    "./src/"
+  ],
+  "exclude": [
+    "node_modules/"
+  ]
+}
