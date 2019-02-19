@@ -1,20 +1,24 @@
-
-const routes = [
+export default [
   {
     path: '/',
-    component: () => import('layouts/app-layout.vue'),
+    component: () => import('layouts/default.vue'),
     children: [
-      { path: '', component: () => import('pages/index.vue') },
+      // { path: '', component: () => import('pages/index.vue') },
+      {
+        path: '/home',
+        component: () => import('pages/home.vue'),
+      },
     ],
   },
-];
 
-// Always leave this as last one
-if (process.env.MODE !== 'ssr') {
-  routes.push({
+  {
+    path: '/',
+    component: () => import('pages/landing.vue'),
+  },
+
+
+  { // Always leave this as last one
     path: '*',
-    component: () => import('pages/404.vue'),
-  });
-}
-
-export default routes;
+    component: () => import('pages/404'),
+  },
+];

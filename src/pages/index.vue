@@ -1,21 +1,25 @@
 <template>
   <q-page class="flex flex-center">
-    <test></test>
+    <img alt="Quasar logo" src="~assets/quasar-logo-full.svg">
+
+    <q-dialog v-model="showModal">
+      <q-card>
+        <q-btn>Dingbats</q-btn>
+      </q-card>
+    </q-dialog>
   </q-page>
 </template>
 
 <style>
 </style>
 
-<script lang="ts">
-import Test from 'components/test';
-
-import { Component, Vue } from 'vue-property-decorator';
-
-@Component({
-  components: { Test },
-})
-export default class Index extends Vue {
-
-}
+<script>
+export default {
+  name: 'PageIndex',
+  data() {
+    return {
+      showModal: true,
+    }
+  }
+};
 </script>

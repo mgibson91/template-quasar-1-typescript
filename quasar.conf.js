@@ -30,6 +30,7 @@ module.exports = function (ctx) {
         'QHeader',
         'QDrawer',
         'QPageContainer',
+        'QDialog',
         'QPage',
         'QToolbar',
         'QToolbarTitle',
@@ -38,16 +39,21 @@ module.exports = function (ctx) {
         'QList',
         'QItem',
         'QItemSection',
-        'QItemLabel'
+        'QItemLabel',
+        'QInput',
+        'QCard',
+        'QTooltip',
       ],
 
       directives: [
-        'Ripple'
+        'Ripple',
+        'CloseDialog',
       ],
 
       // Quasar plugins
       plugins: [
-        'Notify'
+        'Notify',
+        'Platform',
       ]
 
       // iconSet: 'ionicons-v4'
@@ -79,6 +85,8 @@ module.exports = function (ctx) {
           ...cfg.resolve.alias,
           src: path.resolve(__dirname, './src'),
           common: path.resolve(__dirname, './src/common'),
+          ['common-property-connect']: path.resolve(__dirname, './common-property-connect/src'),
+          ['common-ts']: path.resolve(__dirname, './common-ts/src'),
           components: path.resolve(__dirname, './src/components'),
         };
 

@@ -11,8 +11,10 @@
     "baseUrl": ".",
     "paths": {
       "src/*": [ "./src/*" ],
-      "charts/*": [ "./src/components/charts/*" ],
-      "components/*": [ "./src/components/*" ]
+      "common/*": [ "./src/common/*" ],
+      "components/*": [ "./src/components/*" ],
+      "common-property-connect/*": [ "./common-property-connect/src/*" ],
+      "common-ts/*": [ "./common-ts/src/*" ]
     }
   },
   "include": [
