@@ -1,9 +1,9 @@
 {
-  "name": "property-connect",
+  "name": "name",
   "version": "0.0.1",
-  "description": "Property connect",
-  "productName": "Property connect",
-  "cordovaId": "propertyconnect.app",
+  "description": "<description>",
+  "productName": "<productName>",
+  "cordovaId": "<cordovaId>",
   "author": "Matt <matthewgibson91@gmail.com>",
   "private": true,
   "scripts": {
