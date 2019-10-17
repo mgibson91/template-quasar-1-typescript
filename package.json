@@ -1,9 +1,9 @@
 {
-  "name": "<name>",
+  "name": "feedback-board",
   "version": "0.0.1",
-  "description": "<description>",
-  "productName": "<productName>",
-  "cordovaId": "<cordovaId>",
+  "description": "Standalone Vue feedback board using draggable columns",
+  "productName": "feedback-board",
+  "cordovaId": "mgibson.template.feedback",
   "author": "Matt <matthewgibson91@gmail.com>",
   "private": true,
   "scripts": {
@@ -15,7 +15,8 @@
     "axios": "^0.18.0",
     "quasar": "^1.0.0-beta.0",
     "vue-i18n": "^7.3.3",
-    "vue-property-decorator": "^7.3.0"
+    "vue-property-decorator": "^7.3.0",
+    "vue-smooth-dnd": "^0.8.0"
   },
   "devDependencies": {
     "@fimbul/valtyr": "^0.19.0",
@@ -23,14 +24,14 @@
     "@fimbul/wotan": "^0.19.0",
     "@quasar/app": "^1.0.0-beta.0",
     "strip-ansi": "=3.0.1",
+    "ts-loader": "^5.3.3",
     "ts-node": "^8.0.2",
     "tsconfig-paths": "^3.8.0",
+    "tslint": "^5.12.1",
+    "tslint-config-airbnb": "^5.11.1",
     "tslint-eslint-rules": "^5.4.0",
     "tslint-loader": "^3.5.4",
-    "typescript": "^3.3.3",
-    "ts-loader": "^5.3.3",
-    "tslint": "^5.12.1",
-    "tslint-config-airbnb": "^5.11.1"
+    "typescript": "^3.3.3"
   },
   "engines": {
     "node": ">= 8.9.0",
